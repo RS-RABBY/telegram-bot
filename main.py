@@ -1,5 +1,5 @@
 #from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
+#from aiogram.utils import executor
 from config import BOT_TOKEN
 import sqlite3
 
