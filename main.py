@@ -50,7 +50,7 @@ async def myaccount_cmd(message: types.Message):
     cur.execute("SELECT username, bonus_claimed FROM users WHERE id=?", (user_id,))
     data = cur.fetchone()
     if data:
-        await message.reply(f"👤 Username: @{data[0]}
+        await message.reply("👤 Username: @{data[0]}
 💰 Bonus Claimed: {data[1]}")
     else:
         await message.reply("❌ You are not registered.")
