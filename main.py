@@ -34,13 +34,13 @@ async def start_cmd(message: types.Message):
 @dp.message_handler(commands=['help'])
 async def help_cmd(message: types.Message):
     await message.reply(
-        "/myaccount - Show your account
+        "/myaccount - Show your account"
 "
-        "/invite - Get your invite link
+        "/invite - Get your invite link"
 "
-        "/bonus - Claim your bonus
+        "/bonus - Claim your bonus"
 "
-        "/redeem CODE - Redeem a code
+        "/redeem CODE - Redeem a code"
 "
         "/stats - View statistics"
     )
