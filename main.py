@@ -31,7 +31,6 @@ async def start_cmd(message: types.Message):
     args = message.get_args()
     inviter_id = int(args) if args.isdigit() else None
     register_user(message.from_user.id, message.from_user.username, inviter_id)await message.reply("👋 Welcome to RS FIBER TEAM Bot!Use /help to see commands.")
-
 @dp.message_handler(commands=['help'])
 async def help_cmd(message: types.Message):
     await message.reply(
